@@ -7,3 +7,24 @@ $color-white: #FFFFFF;
 $font-lato: 'Lato', sans-serif;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 10vh 1fr 15vh;
+  font-family: $font-lato;
+  color: $color-white;
+}
+
+header {
+  background-color: $color-black;
+}
+
+main {
+  background-color: $color-blue;
+}
+
+footer {
+  background-color: $color-black;
+  color: $color-yellow;
+}
