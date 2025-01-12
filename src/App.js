@@ -3,12 +3,13 @@ import './App.scss';
 function App() {
   return (
     <div className="container">
-      <header>
+      <header className="header white padding-lr-2">
         <Logo />
         <Navbar />
       </header>
       <main>
-        <test>Test</test>
+        <div className="banner"></div>
+        <h1 className="white padding-lr-2">Offers</h1>
       </main>
       <footer>
         footer

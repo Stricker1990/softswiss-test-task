@@ -8,12 +8,26 @@ $font-lato: 'Lato', sans-serif;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
 
+.white {
+  color: $color-white;
+}
+.pink {
+  color: $color-pink;
+}
+.yellow {
+  color: $color-yellow;
+}
+
+.padding-lr-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .container {
   display: grid;
   height: 100vh;
   grid-template-rows: 10vh 1fr 15vh;
   font-family: $font-lato;
-  color: $color-white;
 }
 
 header {
@@ -33,8 +47,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 $logo-width: 5rem;
@@ -65,10 +77,16 @@ $logo-height: 5rem;
 
 .navbar__menu-item {
   margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .navbar__image {
   width: 1em;
   height: 1em;
+}
+
+.banner {
+  width: 100%;
+  height: 50%;
+  background-image: url('../public/Rectangle_39610.png');
+  background-size: cover;
 }
