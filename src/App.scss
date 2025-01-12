@@ -28,3 +28,17 @@ footer {
   background-color: $color-black;
   color: $color-yellow;
 }
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  list-style-type: none;
+}
+
+.navbar > ul > li > a {
+  color: $color-white;
+  text-decoration: none;
+}
