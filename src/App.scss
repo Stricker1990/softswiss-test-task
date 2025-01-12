@@ -29,16 +29,46 @@ footer {
   color: $color-yellow;
 }
 
-.navbar > ul {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+$logo-width: 5rem;
+$logo-height: 5rem;
+
+.logo__svg {
+  width: $logo-width;
+  height: $logo-height;
+}
+.svg-image {
+  width: inherit;
+  height: inherit;
+}
+
+.navbar__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
   list-style-type: none;
+  margin-right: 2rem;
 }
 
-.navbar > ul > li > a {
+.navbar__link {
   color: $color-white;
   text-decoration: none;
+}
+
+.navbar__menu-item {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.navbar__image {
+  width: 1em;
+  height: 1em;
 }

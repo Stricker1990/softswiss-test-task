@@ -4,17 +4,8 @@ function App() {
   return (
     <div className="container">
       <header>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">
-            <svg height="20" width="30" xmlns="http://www.w3.org/2000/svg">
-              <image height="20" width="30" href="cart.svg" alt="Cart"/>
-            </svg>
-          </a></li>
-        </ul>
-      </nav>
+        <Logo />
+        <Navbar />
       </header>
       <main>
         <test>Test</test>
@@ -24,6 +15,38 @@ function App() {
       </footer>
     </div>
   );
+}
+
+function Logo() {
+  return (
+    <div className="logo">
+      <svg className="logo__svg" xmlns="http://www.w3.org/2000/svg">
+        <image className="svg-image" href="LOGO.svg" alt="Logo" />
+      </svg>
+    </div>
+  )
+}
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <ul className="navbar__menu">
+        <li className="navbar__menu-item">
+          <a href="#" className="navbar__link">Home</a>
+        </li>
+        <li className="navbar__menu-item">
+          <a href="#" className="navbar__link">Products</a>
+        </li>
+        <li className="navbar__menu-item">
+          <a href="#" className="navbar__link">
+            <svg className="navbar__image" xmlns="http://www.w3.org/2000/svg">
+              <image className="svg-image" href="cart.svg" alt="Cart" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  )
 }
 
 export default App;
