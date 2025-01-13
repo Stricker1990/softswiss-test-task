@@ -8,7 +8,7 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <div className="banner"></div>
+        <Banner />
         <h1 className="white padding-lr-2">Offers</h1>
       </main>
       <footer>
@@ -47,6 +47,25 @@ function Navbar() {
         </li>
       </ul>
     </nav>
+  )
+}
+
+function Banner() {
+  return (
+    <div className="banner white padding-l-2">
+      <div>
+        <p>
+          <span className="banner__text_large">
+            Discover the vast<br/> expanses of <span className="pink">space</span><br/>
+          </span>
+          <span className="banner__text_small">
+            Where the posibilities are <span className="yellow">endless!</span>
+          </span>
+        </p>
+        <button className="button button_color_yellow">Learn more</button>
+      </div>
+      <div className="banner__image"></div>
+    </div>
   )
 }
 
