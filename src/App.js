@@ -9,7 +9,7 @@ function App() {
       </header>
       <main>
         <Banner />
-        <h1 className="white padding-lr-2">Offers</h1>
+        <Offers />
       </main>
       <footer>
         footer
@@ -67,6 +67,20 @@ function Banner() {
       <div className="banner__image"></div>
     </div>
   )
+}
+
+function Offers() {
+  return (
+    <div>
+      <h1 className="white padding-lr-2">Offers</h1>
+      <div className="offers-container padding-lr-2">
+        <div className="offers-container__item_large">Offer 1</div>
+        <div className="offers-container__item">Offer 2</div>
+        <div className="offers-container__item">Offer 3</div>
+        <div className="offers-container__item_large">Offer 4</div>
+      </div>
+    </div>
+  );
 }
 
 export default App;

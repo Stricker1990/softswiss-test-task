@@ -129,3 +129,14 @@ $logo-height: 5rem;
   background-color: $color-yellow;
   color: $color-black;
 }
+
+.offers-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.offers-container__item_large {
+  grid-column: span 2;
+}
