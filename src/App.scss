@@ -27,6 +27,14 @@ $font-weight-extra-bold: 800;
   padding-left: 2rem;
 }
 
+.padding-2 {
+  padding: 2rem;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .container {
   display: grid;
   height: 100vh;
@@ -169,6 +177,21 @@ $logo-height: 5rem;
   color: $color-yellow;
   border-color: $color-yellow;
   border-style: solid;
+}
+
+.button_secondary {
+  background-color: transparent;
+  color: $color-yellow;
+  border-color: $color-yellow;
+  border-style: solid;
+}
+
+.button_link {
+  border-color: transparent;
+  color: $color-yellow;
+  border-style: solid;
+  background-color: transparent;
+  padding: 0;
 }
 
 .offers-container {
