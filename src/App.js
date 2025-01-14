@@ -8,7 +8,7 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <Banner />
+        <MainBanner />
         <Offers />
       </main>
       <footer>
@@ -50,23 +50,22 @@ function Navbar() {
   )
 }
 
-function Banner() {
+function MainBanner() {
   return (
-    <div className="banner white padding-l-2">
-      <div>
-        <p>
-          <span className="banner__text_large">
-            Discover the vast<br/> expanses of <span className="pink">space</span><br/>
-          </span>
-          <span className="banner__text_small">
+    <BaseBanner className="banner_large">
+      <BaseBanner.Text>
+        <div>
+          <h3 className="banner__text_large">
+            Discover the vast<br /> expanses of <span className="pink">space</span>
+          </h3>
+          <p className="banner__text_small">
             Where the posibilities are <span className="yellow">endless!</span>
-          </span>
-        </p>
-        <button className="button button_color_yellow">Learn more</button>
-      </div>
-      <div className="banner__image"></div>
-    </div>
-  )
+          </p>
+        </div>
+      </BaseBanner.Text>
+      <BaseBanner.Image />
+    </BaseBanner>
+  );
 }
 
 function Offers() {
@@ -74,13 +73,94 @@ function Offers() {
     <div>
       <h1 className="white padding-lr-2">Offers</h1>
       <div className="offers-container padding-lr-2">
-        <div className="offers-container__item_large">Offer 1</div>
-        <div className="offers-container__item">Offer 2</div>
-        <div className="offers-container__item">Offer 3</div>
-        <div className="offers-container__item_large">Offer 4</div>
+        <div className="offers-container__item_large">
+          <BannerOffer1 />
+        </div>
+        <div className="offers-container__item">
+          <BannerOffer2 />
+        </div>
+        <div className="offers-container__item">
+          <BannerOffer3 />
+        </div>
+        <div className="offers-container__item_large">
+          <BannerOffer4 />
+        </div>
       </div>
     </div>
   );
 }
+
+function BannerOffer1() {
+  return (
+    <SmallBanner
+      className={"background_banner-1"}
+      heading={"Move the borders of reality!"}
+      text={"Go on a space adventure - it's possible with us!"}
+    />
+  );
+}
+
+function BannerOffer2() {
+  return (
+    <SmallBanner
+      className={"background_banner-2"}
+      heading={"Space is not just stars and planets"}
+      text={"Go on a space adventure "}
+    />
+  );
+}
+
+function BannerOffer3() {
+  return (
+    <SmallBanner
+      className={"background_banner-3"}
+      heading={"For those who dream of stars"}
+      text={"Our offer: make your dream come true"}
+    />
+  );
+}
+
+function BannerOffer4() {
+  return (
+    <SmallBanner
+      className={"background_banner-4"}
+      heading={"Fulfill your fantastic dreams"}
+      text={"Space has never been so close"}
+    />
+  );
+}
+
+function SmallBanner({ className, heading, text }) {
+  return (
+    <BaseBanner className={className}>
+      <BaseBanner.Text>
+        <div className="banner_small__text-container">
+          <h3 className="banner__text_large">
+            {heading}
+          </h3>
+          <p className="banner__text_small">
+            {text}
+          </p>
+        </div>
+      </BaseBanner.Text>
+    </BaseBanner>
+  );
+}
+
+function BaseBanner(props) {
+  const className = `banner white padding-l-2 ${props.className}`;
+
+  return (
+    <div className={className}>
+      {props.children}
+    </div>
+  )
+}
+BaseBanner.Text = ({ children }) => (
+  <div className="banner__text">
+    {children}
+    <button className="button button_color_yellow">Learn more</button>
+  </div>);
+BaseBanner.Image = () => <div className="banner__image"></div>;
 
 export default App;

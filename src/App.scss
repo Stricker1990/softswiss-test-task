@@ -89,24 +89,27 @@ $logo-height: 5rem;
 }
 
 .banner {
-  max-width: 100%;
-  height: 70vh;
-  background-image: url('../public/Rectangle_39610.png');
   background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.banner__text {
+  padding-bottom: 2rem;
 }
 
 .banner__text_large {
   font-weight: $font-weight-extra-bold;
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-block-start: 0;
+  margin-block-end: 1rem;
+  padding-top: 1rem;
 }
 .banner__text_small {
   font-weight: $font-weight-extra-bold;
   font-size: 1.75rem;
-  line-height: 2em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 1rem;
+  text-wrap: nowrap;
 }
 
 .banner__image {
@@ -114,6 +117,36 @@ $logo-height: 5rem;
   background-size: cover;
   width: 20rem;
   height: 20rem;
+}
+
+.banner_large {
+  background-image: url('../public/main_banner.png');
+  max-width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner_small__text-container {
+  max-width: 60%;
+}
+
+.background_banner-1 {
+  background-image: url('../public/banner-1.png');
+}
+
+.background_banner-2 {
+  background-image: url('../public/banner-2.png');
+}
+
+.background_banner-3 {
+  background-image: url('../public/banner-3.png');
+}
+
+.background_banner-4 {
+  background-image: url('../public/banner-4.png');
 }
 
 .button {
