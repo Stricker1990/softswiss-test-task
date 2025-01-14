@@ -158,9 +158,17 @@ $logo-height: 5rem;
   line-height: 0;
 }
 
-.button_color_yellow {
+.button_primary {
   background-color: $color-yellow;
   color: $color-black;
+  border-color: $color-yellow;
+}
+
+.button_secondary {
+  background-color: transparent;
+  color: $color-yellow;
+  border-color: $color-yellow;
+  border-style: solid;
 }
 
 .offers-container {

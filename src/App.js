@@ -53,7 +53,7 @@ function Navbar() {
 function MainBanner() {
   return (
     <BaseBanner className="banner_large">
-      <BaseBanner.Text>
+      <BaseBanner.Text buttonClassName='button_primary'>
         <div>
           <h3 className="banner__text_large">
             Discover the vast<br /> expanses of <span className="pink">space</span>
@@ -156,11 +156,13 @@ function BaseBanner(props) {
     </div>
   )
 }
-BaseBanner.Text = ({ children }) => (
-  <div className="banner__text">
-    {children}
-    <button className="button button_color_yellow">Learn more</button>
-  </div>);
+BaseBanner.Text = ({ children, buttonClassName = "button_secondary" }) => {
+  return (
+    <div className="banner__text">
+      {children}
+      <button className={`button ${buttonClassName}`}>Learn more</button>
+    </div>)
+};
 BaseBanner.Image = () => <div className="banner__image"></div>;
 
 export default App;
