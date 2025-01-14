@@ -50,9 +50,18 @@ main {
   background-color: $color-blue;
 }
 
-footer {
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $color-black;
   color: $color-yellow;
+}
+
+.footer__image {
+  width: 4rem;
+  height: 4rem;
 }
 
 header {
@@ -186,7 +195,7 @@ $logo-height: 5rem;
   border-style: solid;
 }
 
-.button_link {
+.label {
   border-color: transparent;
   color: $color-yellow;
   border-style: solid;

@@ -11,9 +11,7 @@ function App() {
         <MainBanner />
         <Offers />
       </main>
-      <footer>
-        footer
-      </footer>
+      <Footer />
     </div>
   );
 }
@@ -90,7 +88,7 @@ function Offers() {
       <p className="opacity-60">
         Travelling into space is one of the most exciting and unforgettable adventures that can change your life forever. And if you have ever dreamed of exploring stars, planets and galaxies, then our company is ready to help you realize this dream. We offer a unique experience that will allow you to go on a space journey and see all the secrets of the universe. We guarantee that every moment in space will be filled with incredible impressions, excitement and new discoveries. Our team of professionals takes care of your safety and comfort so that you can fully enjoy your adventure in space. We offer various options for space excursions.
       </p>
-      <button className="button button_link">Read more</button>
+      <button className="button label">Read more</button>
     </div>
   );
 }
@@ -169,5 +167,16 @@ BaseBanner.Text = ({ children, buttonClassName = "button_secondary" }) => {
     </div>)
 };
 BaseBanner.Image = () => <div className="banner__image"></div>;
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <svg className="footer__image" xmlns="http://www.w3.org/2000/svg">
+        <image className="svg-image" href="rocket.svg" alt="Rocket" />
+      </svg>
+      <span className="label">Exciting space adventure!</span>
+    </footer>
+  );
+}
 
 export default App;
