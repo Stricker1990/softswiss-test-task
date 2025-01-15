@@ -29,6 +29,8 @@ function Logo() {
 function Navbar() {
   return (
     <nav className="navbar">
+       <label for="hamburger">☰</label>
+      <input type="checkbox" id="hamburger" className="navbar__hamburger" />
       <ul className="navbar__menu">
         <li className="navbar__menu-item">
           <a href="#" className="navbar__link">Home</a>
