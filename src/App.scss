@@ -257,8 +257,18 @@ $logo-height: 5rem;
     display: none;
   }
 
+  #hamburger_label {
+    width: 2em;
+    height: 2em;
+    background: url('../public/menu_burger.svg')
+  }
+
   #hamburger, label {
     display: inline-block;
+  }
+
+  #hamburger:checked + #hamburger_label {
+    background: url('../public/menu_close.svg');
   }
 
   #hamburger:checked ~ ul {
