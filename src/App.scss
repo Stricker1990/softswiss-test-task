@@ -19,16 +19,16 @@ $font-weight-extra-bold: 800;
 }
 
 .padding-lr-2 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .padding-l-2 {
-  padding-left: 2rem;
+  padding-left: 2em;
 }
 
 .padding-2 {
-  padding: 2rem;
+  padding: 2em;
 }
 
 .opacity-60 {
@@ -115,17 +115,17 @@ $logo-height: 5rem;
 
 .banner__text_large {
   font-weight: $font-weight-extra-bold;
-  font-size: 3rem;
+  font-size: 3em;
   margin-block-start: 0;
-  margin-block-end: 1rem;
-  padding-top: 1rem;
+  margin-block-end: 1em;
+  padding-top: 1em;
 }
 .banner__text_small {
   font-weight: $font-weight-extra-bold;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   margin-block-start: 0;
   margin-block-end: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
   text-wrap: nowrap;
 }
 
@@ -212,4 +212,17 @@ $logo-height: 5rem;
 
 .offers-container__item_large {
   grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .offers-container__item_large {
+    grid-column: span 1;
+  }
+  .banner__text_large {
+    font-size: 1.5em;
+  }
+  .banner__text_small {
+    text-wrap: wrap;
+    font-size: 1em;
+  }
 }
