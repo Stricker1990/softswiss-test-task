@@ -113,6 +113,10 @@ $logo-height: 5rem;
   color: $color-white;
   text-decoration: none;
 }
+.navbar__link:hover {
+  background: linear-gradient(90deg,#EBFF00, #FF70D9);
+  background-clip: text;
+}
 
 .navbar__menu-item {
   margin-left: 2rem;
@@ -121,6 +125,9 @@ $logo-height: 5rem;
 .navbar__image {
   width: 1em;
   height: 1em;
+}
+.navbar__image:hover {
+  background-image: url('../public/cart_hover.svg');
 }
 
 .banner {
@@ -185,6 +192,7 @@ $logo-height: 5rem;
 }
 
 .button {
+  @extend .hover-effect;
   border-radius: 50px;
   height: 2rem;
   padding: 1.5rem;
@@ -230,6 +238,10 @@ $logo-height: 5rem;
 
 .offers-container__item_large {
   grid-column: span 2;
+}
+
+.hover-effect:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
