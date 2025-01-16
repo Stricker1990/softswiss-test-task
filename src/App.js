@@ -136,8 +136,9 @@ function BannerOffer4() {
 }
 
 function SmallBanner({ className, heading, text }) {
+  const classNameSmallBanner = `banner_small ${className}`;
   return (
-    <BaseBanner className={className}>
+    <BaseBanner className={classNameSmallBanner}>
       <BaseBanner.Text>
         <div className="banner_small__text-container">
           <h3 className="banner__text_large">
