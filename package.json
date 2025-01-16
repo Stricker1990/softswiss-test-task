@@ -2,6 +2,7 @@
   "name": "cra-sass",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stricker1990.github.io/softswiss-test-task/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
