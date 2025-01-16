@@ -40,6 +40,7 @@ $font-weight-extra-bold: 800;
   height: 100vh;
   grid-template-rows: 10vh 1fr 15vh;
   font-family: $font-lato;
+  box-sizing: border-box;
 }
 
 header {
