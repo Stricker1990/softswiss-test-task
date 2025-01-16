@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/softswiss-test-task/static/css/main.d1d326b4.css",
+    "main.js": "/softswiss-test-task/static/js/main.36f6eb4e.js",
+    "static/js/453.150dc45e.chunk.js": "/softswiss-test-task/static/js/453.150dc45e.chunk.js",
+    "static/media/main_banner.webp": "/softswiss-test-task/static/media/main_banner.3c61546f06771a8f84df.webp",
+    "static/media/EARTH.png": "/softswiss-test-task/static/media/EARTH.95708cb3e47d74e1cf28.png",
+    "static/media/banner-4.webp": "/softswiss-test-task/static/media/banner-4.e1fcae137759a38c491a.webp",
+    "static/media/banner-3.webp": "/softswiss-test-task/static/media/banner-3.72c3bf5b128f83908f0b.webp",
+    "static/media/banner-2.webp": "/softswiss-test-task/static/media/banner-2.62ec4a8d22ebb6adcc70.webp",
+    "static/media/banner-1.webp": "/softswiss-test-task/static/media/banner-1.d0b4ed5ec61fa106dfef.webp",
+    "static/media/cart_hover.svg": "/softswiss-test-task/static/media/cart_hover.130703b7b0cf9871648f.svg",
+    "static/media/menu_burger.svg": "/softswiss-test-task/static/media/menu_burger.7e65dcdbfcb4fb7f60ea.svg",
+    "static/media/menu_close.svg": "/softswiss-test-task/static/media/menu_close.60d4f41347544050a7b9.svg",
+    "index.html": "/softswiss-test-task/index.html",
+    "main.d1d326b4.css.map": "/softswiss-test-task/static/css/main.d1d326b4.css.map",
+    "main.36f6eb4e.js.map": "/softswiss-test-task/static/js/main.36f6eb4e.js.map",
+    "453.150dc45e.chunk.js.map": "/softswiss-test-task/static/js/453.150dc45e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1d326b4.css",
+    "static/js/main.36f6eb4e.js"
+  ]
+}
